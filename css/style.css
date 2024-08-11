@@ -214,7 +214,7 @@ body.active::before {
 
 .header {
   background-color: #fff;
-  padding: 0.8rem 0;
+  padding: 0.25rem 0;
 }
 .header.fixed_me {
   position: fixed;
@@ -242,6 +242,12 @@ body.active::before {
 .header .logo span {
   font-family: "Nunito";
   font-size: 2.4rem;
+}
+.header .logo img {
+  width: 170px;
+  height: 60px;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 .header .nav .list-item {
   display: inline-block;
@@ -3848,9 +3854,12 @@ img {
 .buttons button {
   display: inline-block;
   padding: 30px 15px;
-  background: #fff;
+  background: #e53e43;
+  color: #fff;
   font-family: "Poppins";
   font-size: 0.89rem;
+  text-transform: uppercase;
+  cursor: pointer;
 }
 
 .copy {
