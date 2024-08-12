@@ -213,10 +213,10 @@ document.addEventListener("keydown", (e) => {
 let loading = () => {
   setTimeout(() => {
     document.querySelector(".preloader").classList.add("opacity-o");
-  }, 1500);
+  }, 300);
   setTimeout(function () {
     document.querySelector(".preloader").style.display = "none";
-  }, 2000);
+  }, 350);
 };
 this.onload = () => {
   loading();
