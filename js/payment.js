@@ -25,6 +25,9 @@ function payWithPaystack(e) {
   
     handler.openIframe();
   }
+  document.getElementById('payBtn').addEventListener('click', e=>{
+    e.preventDefault()
+  })
 document.getElementById('payBtn').addEventListener('click', payWithPaystack)
 
 const paymentModalWrapper = document.getElementById('payment-modal-wrapper');
