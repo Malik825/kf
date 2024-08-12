@@ -290,7 +290,7 @@ body.active::before {
 }
 .header .themeIcon {
   display: flex;
-  padding-left: 2rem;
+  padding-left: 0rem;
 }
 .header .themeIcon .heart2 {
   display: none;
@@ -3846,13 +3846,16 @@ img {
   margin-bottom: 40px;
 }
 
-.buttons {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(5rem, 1fr));
+.button {
+  display: flex;
+  grid-template-columns: repeat(auto-fit, minmax(5rem, 2fr)) !important;
+  flex-wrap: wrap;
+  justify-content: center;
   gap: 1rem;
 }
-.buttons button {
+.button button {
   display: inline-block;
+  flex: 0 0 20%;
   padding: 30px 15px;
   background: #e53e43;
   color: #fff;

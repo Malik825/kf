@@ -398,7 +398,7 @@ body {
 
     .themeIcon {
         display: flex;
-        padding-left: 2rem;
+        padding-left: 0rem;
         .heart2{
             display: none;
         }
@@ -4637,13 +4637,15 @@ line-height:1.4;
 
 
   
-.buttons{
-display: grid;
-grid-template-columns: repeat(auto-fit, minmax(5rem, 1fr));
+.button{
+display: flex;
+grid-template-columns: repeat(auto-fit, minmax(5rem, 2fr)) !important;
+flex-wrap: wrap;
+justify-content: center;
 gap: 1rem;
-
     button{
         display: inline-block;
+        flex: 0 0 20%;
         padding: 30px 15px;
         background: $primary;
         color: #fff;

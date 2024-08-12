@@ -258,6 +258,33 @@
                 </div>
             </div>
         </div>
+        <section id="donate">
+            <div class="container">
+        
+                <h2>Donate</h2>
+                <p>Your generous donation can make a real difference in the lives of those in need. Help us create a
+                    positive impact by contributing to our cause.</p>
+        
+                <div class="donate-options">
+        
+        
+                    <div class="buttons container">
+                        <div class="button">
+                            <!-- <button onclick="showDonationPopup('mtnmomo')">Donate via MTN MoMo</button>
+                            <button onclick="showDonationPopup('telecel')">Donate via Telecel</button>
+                            <button onclick="showDonationPopup('airteltigo')">Donate via Airtel Tigo</button>
+                            <button onclick="showDonationPopup('bankaccount')">Donate via Bank Account</button> -->
+                            <button onclick="showPaymentOptions()">Make a donation</button>
+                        </div>
+        
+        
+        
+                    </div>
+                </div>
+        
+        
+            </div>
+        </section>
     <footer>
 
     </footer>
@@ -272,6 +299,84 @@
     <script src="./js/aos.js"></script>
     <script type="text/javascript" src="https://popupsmart.com/freechat.js"></script>
     <script> window.start.init({ title: "Hi there ✌️", message: "How may we help you?", color: "#00040f", position: "right", placeholder: "Enter your message", withText: "Write with", viaWhatsapp: "Or write us directly via Whatsapp", gty: "Go to your", awu: "and write us", connect: "Connect now", button: "Write us", device: "everywhere", logo: "https://d2r80wdbkwti6l.cloudfront.net/P5IofDyaYaGqnUmUYLAQlLTBY1t0omzt.jpg", person: "https://d2r80wdbkwti6l.cloudfront.net/vC4XQujy9d2HTxkCAOKpk1zi2kOTdq9K.jpg", services: [{ "name": "whatsapp", "content": "0257825866" }] })</script>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    
+    <script>
+        function showDonationPopup(paymentMethod) {
+            var paymentMethods = {
+                mtnmomo: {
+                    phoneNumber: "123456789",
+                    methodText: "MTN MoMo"
+                },
+                telecel: {
+                    phoneNumber: "987654321",
+                    methodText: "Telecel"
+                },
+                airteltigo: {
+                    phoneNumber: "567890123",
+                    methodText: "Airtel Tigo"
+                },
+                bankaccount: {
+                    phoneNumber: "012345678",
+                    methodText: "Bank Account"
+                }
+            };
+
+            var bankAccountNumber = "1111111111"; // Replace with your bank account number
+
+            var selectedMethod = paymentMethods[paymentMethod];
+
+            var message = "To make a donation, please send your contribution to the following " + selectedMethod.methodText + " number or bank account:\n\n" +
+                "Phone Number: " + selectedMethod.phoneNumber + "\n\n" +
+                "Bank Account Number: " + bankAccountNumber;
+
+            swal({
+                title: "Donate via " + selectedMethod.methodText,
+                text: message,
+                buttons: {
+                    confirm: "Close",
+                },
+            });
+        }
+
+        function showPaymentOptions() {
+            var paymentMethods = {
+                mtnmomo: {
+                    phoneNumber: "123456789",
+                    methodText: "MTN MoMo"
+                },
+                telecel: {
+                    phoneNumber: "987654321",
+                    methodText: "Telecel"
+                },
+                airteltigo: {
+                    phoneNumber: "567890123",
+                    methodText: "Airtel Tigo"
+                },
+                bankaccount: {
+                    phoneNumber: "012345678",
+                    methodText: "Bank Account"
+                }
+            };
+
+            var bankAccountNumber = "1111111111"; // Replace with your bank account number
+
+            var message = "You can make a donation using the following payment methods:\n\n" +
+                "1. MTN MoMo - Phone Number: " + paymentMethods.mtnmomo.phoneNumber + "\n" +
+                "2. Telecel - Phone Number: " + paymentMethods.telecel.phoneNumber + "\n" +
+                "3. Airtel Tigo - Phone Number: " + paymentMethods.airteltigo.phoneNumber + "\n" +
+                "4. Bank Account - Account Number: " + bankAccountNumber;
+
+            swal({
+                title: "Payment Options",
+                text: message,
+                buttons: {
+                    confirm: "Close",
+                },
+            });
+        }
+    </script>
+
     <script src="./js/main.js"></script>
     <script src="./js/Footer.js"></script>
 
