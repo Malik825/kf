@@ -3860,7 +3860,7 @@ img {
 }
 .button button {
   display: inline-block;
-  flex: 0 0 20%;
+  flex: 0 0 25%;
   padding: 30px 15px;
   background: #e53e43;
   color: #fff;
@@ -3868,6 +3868,11 @@ img {
   font-size: 0.89rem;
   text-transform: uppercase;
   cursor: pointer;
+}
+@media (max-width: 667px) {
+  .button button {
+    flex: 0 0 50%;
+  }
 }
 
 .copy {

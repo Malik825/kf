@@ -4649,7 +4649,7 @@ justify-content: center;
 gap: 1rem;
     button{
         display: inline-block;
-        flex: 0 0 20%;
+        flex: 0 0 25%;
         padding: 30px 15px;
         background: $primary;
         color: #fff;
@@ -4657,6 +4657,9 @@ gap: 1rem;
         font-size: .89rem;
         text-transform: uppercase;
         cursor: pointer;
+    @media (max-width:667px) {
+        flex:0 0 50%;
+    }
     }
 }
 .copy {
