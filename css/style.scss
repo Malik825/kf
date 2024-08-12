@@ -4622,7 +4622,11 @@ line-height:1.4;
   }
   #donate .container{
     width: 1300px;
-  }
+@media (max-width:768px) {
+    width: 97%;
+}  
+}
+  
   #donate h2 {
     color: #333;
     font-size: 28px;

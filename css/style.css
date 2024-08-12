@@ -3833,6 +3833,11 @@ img {
 #donate .container {
   width: 1300px;
 }
+@media (max-width: 768px) {
+  #donate .container {
+    width: 97%;
+  }
+}
 
 #donate h2 {
   color: #333;
