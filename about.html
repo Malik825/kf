@@ -5,52 +5,24 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Kina Inspires Foundation❤</title>
+<title>Kina Inspires Foundation ❤</title>
     <link rel="stylesheet" href="css/aos.css">
     <link rel="stylesheet" href="./assets/owlCarousel/Css/owl.carousel.min.css">
     <link rel="stylesheet" href="./assets/owlCarousel/Css/owl.theme.default.min.css">
     <link rel="stylesheet" href="./Assets/lightgallery.js-master/dist/css/lightgallery.min.css">
-<link rel="shortcut icon" href="./images/KINA (2).png" type="image/x-icon">
+<link rel="shortcut icon" href="./images/logo.png" type="image/x-icon">
     <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css" />
     <link rel="stylesheet" href="css/line-awesome.min.css">
-    <link rel="stylesheet" href="css/form.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
-    <div class="payment-modal-wrapper" id="payment-modal-wrapper">
-
-        <form id="paymentForm">
-            <div class="close-icon" id="closeDonateBtn">
-                <i class="la la-times"></i>
-            </div>
-            <div class="form-group">
-              <label for="email">Email Address</label>
-              <input type="email" id="email-address" required />
-            </div>
-            <div class="form-group">
-              <label for="amount">Amount</label>
-              <input type="tel" id="amount" required />
-            </div>
-            <div class="form-group">
-              <label for="first-name">First Name</label>
-              <input type="text" id="first-name" />
-            </div>
-            <div class="form-group">
-              <label for="last-name">Last Name</label>
-              <input type="text" id="last-name" />
-            </div>
-            <div class="form-submit">
-              <button type="submit" id="payBtn"> Pay </button>
-            </div>
-          </form>
-    </div>
     <div class="top_section">
         <div class="container">
             <div class="row jbtn align">
-                <div class="cta"><a href="tel:0530460093"><i class="uil uil-phone-alt"></i> 0530460093</a>
-                    <a href="mailto:kinainspiresfoundation10@gmail.com"><i
-                            class="uil uil-envelope-add"></i>kinainspiresfoundation10@gmail.com </a>
+                <div class="cta"><a href="tel:0559069195"><i class="uil uil-phone-alt"></i> 0559069195</a>
+                    <a href="mailto:abdulmaliksuleman75@gmail.com"><i
+                            class="uil uil-envelope-add"></i>abdulmaliksuleman75@gmail.com </a>
                 </div>
                 <div class="socialLinks">
                     <a href=""><i class="uil uil-facebook-f"></i></a>
@@ -67,20 +39,21 @@
     <header class="header" id="header">
         <div class="container">
             <div class="row jbtn align">
-                <a href="./index.html" class="logo"><img src="./images/KINA (2).png" alt=""></a>
+                <a href="./index.html" class="logo"><img src="./images/logo.png" alt=""></a>
                 <ul class="nav">
                     <li class="list-item"><a href="./index.html" class="nav-item">Home</a></li>
                     <li class="list-item"><a href="#about" class="nav-item activeItem">About</a></li>
-                    <li class="list-item"><a href="./index.html#program" class="nav-item activeItem">Programs</a></li>
 
+                    <li class="list-item"><a href="#gallery.html" class="nav-item">Gallery</a></li>
 
                     <li class="list-item"><a href="#contact" class="nav-item">Contact</a></li>
                 </ul>
                 <div class="themeIcon" id="">
-                    <a href="#" class="btn" id="subscribeToggler2">
-                        Donate<span></span><span></span><span></span><span></span>
+                    <a href="/index.html#donate" class="btn" id="subscribeToggler2">
+                       Donate<span></span><span></span><span></span><span></span>
                         <i class="uil uil-heart"></i>
-                      </a>
+                    </a>
+                    <i class="uil uil-heart heart2"></i>
                 </div>
             </div>
         </div>
@@ -107,7 +80,7 @@
                 <div class="container">
                     <div class="row jbtn align">
                         <div class="cta"><a href="tel:0559069195"><i class="uil uil-phone-alt"></i> 0559069195</a>
-                            <a href="mailto:kinainspiresfoundation10@gmail.com"><i
+                            <a href="mailto:abdulmaliksuleman75@gmail.com"><i
                                     class="uil uil-envelope-add"></i>amaliksuleman75@gmail.com<span></span></a>
                         </div>
                         <div class="socialLinks">
@@ -280,7 +253,33 @@
                 </div>
             </div>
         </div>
-      
+        <section id="donate">
+            <div class="container">
+        
+                <h2>Donate</h2>
+                <p>Your generous donation can make a real difference in the lives of those in need. Help us create a
+                    positive impact by contributing to our cause.</p>
+        
+                <div class="donate-options">
+        
+        
+                    <div class="buttons container">
+                        <div class="button">
+                            <!-- <button onclick="showDonationPopup('mtnmomo')">Donate via MTN MoMo</button>
+                            <button onclick="showDonationPopup('telecel')">Donate via Telecel</button>
+                            <button onclick="showDonationPopup('airteltigo')">Donate via Airtel Tigo</button>
+                            <button onclick="showDonationPopup('bankaccount')">Donate via Bank Account</button> -->
+                            <button onclick="showPaymentOptions()">Make a donation</button>
+                        </div>
+        
+        
+        
+                    </div>
+                </div>
+        
+        
+            </div>
+        </section>
     <footer>
 
     </footer>
@@ -293,10 +292,86 @@
     <script src="./Assets/lightgallery.js-master/dist/js/lightgallery.min.js"></script>
     <script src="./assets/owlCarousel/Js/owl.carousel.min.js"></script>
     <script src="./js/aos.js"></script>
+    <script type="text/javascript" src="https://popupsmart.com/freechat.js"></script>
+    <script> window.start.init({ title: "Hi there ✌️", message: "How may we help you?", color: "#00040f", position: "right", placeholder: "Enter your message", withText: "Write with", viaWhatsapp: "Or write us directly via Whatsapp", gty: "Go to your", awu: "and write us", connect: "Connect now", button: "Write us", device: "everywhere", logo: "https://d2r80wdbkwti6l.cloudfront.net/P5IofDyaYaGqnUmUYLAQlLTBY1t0omzt.jpg", person: "https://d2r80wdbkwti6l.cloudfront.net/vC4XQujy9d2HTxkCAOKpk1zi2kOTdq9K.jpg", services: [{ "name": "whatsapp", "content": "0257825866" }] })</script>
     <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
     
-    <script src="https://js.paystack.co/v2/inline.js"></script>
-    <script src="./Js/payment.js"></script>
+    <script>
+        function showDonationPopup(paymentMethod) {
+            var paymentMethods = {
+                mtnmomo: {
+                    phoneNumber: "123456789",
+                    methodText: "MTN MoMo"
+                },
+                telecel: {
+                    phoneNumber: "987654321",
+                    methodText: "Telecel"
+                },
+                airteltigo: {
+                    phoneNumber: "567890123",
+                    methodText: "Airtel Tigo"
+                },
+                bankaccount: {
+                    phoneNumber: "012345678",
+                    methodText: "Bank Account"
+                }
+            };
+
+            var bankAccountNumber = "1111111111"; // Replace with your bank account number
+
+            var selectedMethod = paymentMethods[paymentMethod];
+
+            var message = "To make a donation, please send your contribution to the following " + selectedMethod.methodText + " number or bank account:\n\n" +
+                "Phone Number: " + selectedMethod.phoneNumber + "\n\n" +
+                "Bank Account Number: " + bankAccountNumber;
+
+            swal({
+                title: "Donate via " + selectedMethod.methodText,
+                text: message,
+                buttons: {
+                    confirm: "Close",
+                },
+            });
+        }
+
+        function showPaymentOptions() {
+            var paymentMethods = {
+                mtnmomo: {
+                    phoneNumber: "123456789",
+                    methodText: "MTN MoMo"
+                },
+                telecel: {
+                    phoneNumber: "987654321",
+                    methodText: "Telecel"
+                },
+                airteltigo: {
+                    phoneNumber: "567890123",
+                    methodText: "Airtel Tigo"
+                },
+                bankaccount: {
+                    phoneNumber: "012345678",
+                    methodText: "Bank Account"
+                }
+            };
+
+            var bankAccountNumber = "1111111111"; // Replace with your bank account number
+
+            var message = "You can make a donation using the following payment methods:\n\n" +
+                "1. MTN MoMo - Phone Number: " + paymentMethods.mtnmomo.phoneNumber + "\n" +
+                "2. Telecel - Phone Number: " + paymentMethods.telecel.phoneNumber + "\n" +
+                "3. Airtel Tigo - Phone Number: " + paymentMethods.airteltigo.phoneNumber + "\n" +
+                "4. Bank Account - Account Number: " + bankAccountNumber;
+
+            swal({
+                title: "Payment Options",
+                text: message,
+                buttons: {
+                    confirm: "Close",
+                },
+            });
+        }
+    </script>
+
     <script src="./js/main.js"></script>
     <script src="./js/Footer.js"></script>
 
