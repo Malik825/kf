@@ -28,9 +28,9 @@ const createFooter = () => {
                         <h2>Our Location</h2>
                         <ul>
                             <li><i class="uil uil-home"></i><a href="#">Ucc, Ammamah Street 457.</a></li>
-                            <li><i class="uil uil-phone"></i><a href="tel:0559069195">0559069195</a></li>
+                            <li><i class="uil uil-phone"></i><a href="tel:0530460093">0530460093</a></li>
                             <li><i class="uil uil-envelope"></i><a
-                                    href="mailto:abdulmaliksuleman75@gmail.com">admin@gmail.com</a></li>
+                                    href="mailto:kinainspiresfoundation10@gmail.com">admin@gmail.com</a></li>
                             <li><i class="uil uil-globe"></i><a href="index.html">website</a></li>
                             <!-- <li><i class="uil uil globe"></i><a href="index.html">website</a></li> -->
                         </ul>

@@ -13,16 +13,45 @@
     <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css" />
     <link rel="stylesheet" href="css/line-awesome.min.css">
     <link rel="shortcut icon" href="./images/KINA (2).png" type="image/x-icon">
+    <link rel="stylesheet" href="css/form.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
+    <div class="payment-modal-wrapper" id="payment-modal-wrapper">
+
+    <form id="paymentForm">
+        <div class="close-icon" id="closeDonateBtn">
+            <i class="la la-times"></i>
+        </div>
+        <div class="form-group">
+          <label for="email">Email Address</label>
+          <input type="email" id="email-address" required />
+        </div>
+        <div class="form-group">
+          <label for="amount">Amount</label>
+          <input type="tel" id="amount" required />
+        </div>
+        <div class="form-group">
+          <label for="first-name">First Name</label>
+          <input type="text" id="first-name" />
+        </div>
+        <div class="form-group">
+          <label for="last-name">Last Name</label>
+          <input type="text" id="last-name" />
+        </div>
+        <div class="form-submit">
+          <button type="submit" id="payBtn"> Pay </button>
+        </div>
+      </form>
+</div>
+
     <div class="top_section">
         <div class="container">
             <div class="row jbtn align">
-                <div class="cta"><a href="tel:0559069195"><i class="uil uil-phone-alt"></i> 0559069195</a>
-                    <a href="mailto:abdulmaliksuleman75@gmail.com"><i
-                            class="uil uil-envelope-add"></i>abdulmaliksuleman75@gmail.com </a>
+                <div class="cta"><a href="tel:0530460093"><i class="uil uil-phone-alt"></i> 0530460093</a>
+                    <a href="mailto:kinainspiresfoundation10@gmail.com"><i
+                            class="uil uil-envelope-add"></i>kinainspiresfoundation10@gmail.com </a>
                 </div>
                 <div class="socialLinks">
                     <a href=""><i class="uil uil-facebook-f"></i></a>
@@ -45,16 +74,15 @@
                     <li class="list-item"><a href="about.html" class="nav-item">About</a></li>
 
                     <li class="list-item"><a href="#program" class="nav-item">Program</a></li>
-                    <li class="list-item"><a href="#gallery" class="nav-item">Gallery</a></li>
+                   
 
                     <li class="list-item"><a href="#contact" class="nav-item">Contact</a></li>
                 </ul>
                 <div class="themeIcon" id="">
-                    <a  href="#donate" class="btn" id="subscribeToggler2">
+                    <a href="#" class="btn" id="subscribeToggler2">
                         Donate<span></span><span></span><span></span><span></span>
                         <i class="uil uil-heart"></i>
-                    </a>
-                    <i class="uil uil-heart heart2"></i>
+                      </a>
                 </div>
             </div>
         </div>
@@ -64,7 +92,7 @@
         <div id="page-menu" class="page-menu">
             <ul class="menu">
                 <li class="list-item"><a href="#home" class="nav-item activeItem">Home</a></li>
-                <li class="list-item"><a href="./about us" class="nav-item">About</a></li>
+                <li class="list-item"><a href="./about" class="nav-item">About</a></li>
             
                 <li class="list-item"><a href="#program" class="nav-item">Program</a></li>
 
@@ -81,8 +109,8 @@
             <div class="top_nav">
                 <div class="container">
                     <div class="row jbtn align">
-                        <div class="cta"><a href="tel:0559069195"><i class="uil uil-phone-alt"></i> 0559069195</a>
-                            <a href="mailto:abdulmaliksuleman75@gmail.com"><i
+                        <div class="cta"><a href="tel:0530460093"><i class="uil uil-phone-alt"></i> 0530460093</a>
+                            <a href="mailto:kinainspiresfoundation10@gmail.com"><i
                                     class="uil uil-envelope-add"></i>amaliksuleman75@gmail.com<span></span></a>
                         </div>
                         <div class="socialLinks">
@@ -115,7 +143,7 @@
                         <h1 class="hide">Save the Children invest in childhood</h1>
                         <h1 class="hide">Donate a cedi and feed a child</h1>
                         <h2 class="hide">Givers Never Luck</h2>
-                        <a href="./about.html" class="btn" id="payHandler">Read More
+                        <a href="./about.html" class="btn"> Read More
                             <span></span><span></span><span></span><span></span><i class="uil uil-heart"></i></a>
                     </div>
                 </div>
@@ -132,26 +160,12 @@
                             Impact</h1>
                         <h1 class="hide">Donate a cedi and feed a child</h1>
                         <h2 class="hide">Givers Never Luck</h2>
-                        <a href="./about.html" class="btn" id="payHandler">Read More
+                        <a href="./about.html" class="btn" >Read More
                             <span></span><span></span><span></span><span></span><i class="uil uil-heart"></i></a>
                     </div>
                 </div>
             </li>
-            <li class="slide-item">
-                <div class="slide-content">
-                    <img src="images/bg.webp" alt="img-card">
-                    <div class="overlay"></div>
-                    <div class="meta">
-                        <h1 class="hero-title">Save <span>A Life.</span> Your Donation can <span>save a
-                                handfull of lives</span></h1>
-                        <h1 class="hide">Save the Children invest in childhood</h1>
-                        <h1 class="hide">Building a Brighter Future</h1>
-                        <h2 class="hide">Givers Never Luck</h2>
-                        <a href="./about.html" class="btn" id="payHandler">Read More
-                            <span></span><span></span><span></span><span></span><i class="uil uil-heart"></i></a>
-                    </div>
-                </div>
-            </li>
+         
             <li class="slide-item">
                 <div class="slide-content">
                     <img src="images/download/ai-generated-7889179_1280.jpg" alt="img-card">
@@ -448,541 +462,14 @@
             </div>
 
         </section>
-        <!-- <section class="blogGrid section" id="blog" data-scene>
-            <div class="container">
-                <div class="row">
-                    <div class="section-title" data-aos="flip-up">
-                        <h2>Recent Blog</h2>
-                        <div class="dot"></div>
-                    </div>
-
-
-                    <div class="blogMainGrid">
-                        <div class="blogMainItem">
-                            <div class="blog_inner">
-
-                                <div class="image imageCard">
-                                    <a href="#" class="read"> <i class="uil uil-edit"></i> Read More</a>
-                                    <img src="./images/t6.jpg" style="object-position:0 0px" alt="">
-
-                                </div>
-                                <div class="content">
-                                    <h2>Donation: Benefits of Donating to the save the Life of the innocent kids and
-                                        others in need.</h2>
-                                    <a href="#"><i class="uil uil-clock"></i>December 24, 2022</a>
-                                    <a href="#"><i class="uil uil-map-marker-alt"></i>Asante Mampong, Kofiase</a>
-
-                                </div>
-
-
-                            </div>
-                            <div class="blogWrapper">
-                                <i class="closeBlog">&times;</i>
-
-                                <div class="blogContent">
-
-                                    <div class="row">
-                                        <a href="#"><i class="uil uil-user"></i>Amalik</a>
-                                        <a href="#"><i class="las la-calendar"></i>December 24, 2022</a>
-                                        <a href="#"><i class="las la-tags"></i><span>Charity</span>,
-                                            <span>Donation</span>, <span>Help</span>
-                                        </a>
-
-                                    </div>
-                                    <h2 class="blogTitle">Donation: Benefits of Donating to the save the innocent kid
-                                    </h2>
-
-                                    <div class="image">
-                                        <img src="./images/t6.jpg" alt="blog-image" style="object-position:0 0 ">
-                                    </div>
-                                    <div class="blogDetails">
-                                        <p>
-                                            Making a Difference: The Powerful Benefits of Donating to Save the Lives of
-                                            Innocent Kids and Others in Need"
-
-                                            In a world filled with challenges and adversity, there is an extraordinary
-                                            opportunity for each of us to bring about
-                                            positive change. One impactful way to make a difference is through donating
-                                            to save the lives of innocent children and
-                                            others in need. The benefits of such contributions extend far beyond the
-                                            immediate impact of providing critical
-                                            assistance.
-
-                                            First and foremost, your donation can be a lifeline for those in desperate
-                                            situations. By supporting organizations
-                                            dedicated to saving lives, you directly contribute to essential resources
-                                            such as food, clean water, medical care, and
-                                            shelter. Your generosity can offer hope and relief to vulnerable
-                                            individuals, giving them a chance to survive and
-                                            thrive.
-
-                                            Moreover, donating to save lives fosters a sense of fulfillment and purpose
-                                            within yourself. Knowing that your
-                                            contribution has directly impacted someone's life can bring immense joy and
-                                            satisfaction. It reaffirms the significance
-                                            of empathy and compassion, reminding us of our shared humanity.
-
-                                            Additionally, your donation sets an inspiring example for others to follow.
-                                            By actively participating in the act of
-                                            giving, you become an advocate for positive change and inspire those around
-                                            you to take action. Your generosity can
-                                            create a ripple effect, encouraging others to contribute and amplifying the
-                                            collective impact we can make together.
-
-                                            Furthermore, supporting initiatives to save lives can have long-term effects
-                                            on communities and society as a whole. By
-                                            investing in the well-being and education of children, you contribute to
-                                            breaking the cycle of poverty and empowering
-                                            future generations. Each life saved has the potential to become a catalyst
-                                            for positive change, creating a ripple effect
-                                            of transformation in communities and beyond
-                                        <p>Lastly, donating to save lives aligns your values and actions, allowing you
-                                            to actively participate in creating a more
-                                            compassionate and equitable world. It is an opportunity to stand up for
-                                            justice, equality, and the fundamental right to
-                                            life. By supporting organizations that work tirelessly to save lives, you
-                                            become an agent of change, amplifying your
-                                            voice and making a lasting impact</p>
-
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
-
-                        </div>
-                        <div class="blogMainItem">
-                            <div class="blog_inner">
-
-                                <div class="image imageCard">
-                                    <a href="#" class="read"> <i class="uil uil-edit"></i> Read More</a>
-                                    <img src="./images/project-2.webp" alt="">
-
-                                </div>
-                                <div class="content">
-                                    <h2>God rewards the giver abundantly</h2>
-                                    <a href="#"><i class="uil uil-clock"></i>November 24, 2021</a>
-                                    <a href="#"><i class="uil uil-map-marker-alt"></i>Ammamomah, UCC</a>
-
-                                </div>
-                                <div class="blogStats">
-                                    <strong>Total Stats</strong>
-                                    <div class="grid">
-                                        <div class="grid-item">
-                                            <img src="./images/gallery/1.jpg" alt="">
-                                        </div>
-                                        <div class="grid-item">
-                                            <img src="./images/gallery/3.jpg" alt="">
-                                        </div>
-                                        <div class="grid-item">
-                                            <img src="./images/2.jpg" alt="">
-                                        </div>
-                                        <div class="grid-item">
-                                            <img src="./images/gallery/6.jpg" alt="">
-                                        </div>
-                                        <div class="grid-item">
-                                            <img src="./images/gallery/4.jpg" alt="">
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="blogWrapper">
-                                <div class="closeBlog">x</div>
-                                <div class="blogContent">
-
-                                    <div class="row">
-                                        <a href="#"><i class="uil uil-user"></i>Addict</a>
-                                        <a href="#"><i class="las la-calendar"></i>November 24, 2021</a>
-                                        <a href="#"><i class="las la-tags"></i><span>Charity</span>,
-                                            <span>Donation</span>, <span>Help</span>
-                                        </a>
-
-                                    </div>
-
-                                    <h2 class="blogTitle">God has a way of rewarding of the giver</h2>
-                                    <div class="image">
-                                        <img src="./images/project-2.webp" alt="blog-image">
-                                    </div>
-                                    <div class="blogDetails">
-                                        <p>In the act of giving, we not only make a difference in the lives of others
-                                            but also open ourselves up to receiving
-                                            abundant rewards from a higher power. When we extend a helping hand to those
-                                            in need, we become channels for divine
-                                            blessings that transcend material gains.
-
-                                            First and foremost, giving allows us to align ourselves with the core values
-                                            of compassion, generosity, and love that
-                                            are deeply rooted in our spiritual beliefs. By practicing selflessness and
-                                            caring for the well-being of others, we
-                                            embody the essence of our faith and strengthen our connection with God. </p>
-                                        <p>Furthermore, the act of giving brings immense joy and fulfillment to our
-                                            hearts. It is through giving that we experience
-                                            the true essence of our humanity and the profound impact we can have on the
-                                            lives of others. The happiness derived from
-                                            knowing that we have made a positive difference in someone's life is a
-                                            divine reward in itself.
-
-                                            In addition, God's rewards often come in unexpected and miraculous ways.
-                                            When we give with a sincere and pure intention,
-                                            we create a ripple effect of goodness that extends far beyond our initial
-                                            act. Our generosity can inspire others to
-                                            give, creating a chain reaction of kindness and compassion that has
-                                            immeasurable effects on individuals, families, and
-                                            communities
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="blogMainItem">
-                            <div class="blog_inner">
-
-                                <div class="image imageCard">
-                                    <a href="#" class="read"> <i class="uil uil-edit"></i> Read More</a>
-                                    <img src="./images/download/ai-generated-7949924_1280.jpg"
-                                        style="object-position: 0 0" alt="">
-
-                                </div>
-                                <div class="content">
-                                    <h2>Making a Difference: Unleashing Compassion Through Charitable Giving</h2>
-                                    <a href="#"><i class="uil uil-clock"></i>December 12, 2022</a>
-                                    <a href="#"><i class="uil uil-map-marker-alt"></i>Asante Mampong, Kofiase</a>
-
-                                </div>
-
-                            </div>
-                            <div class="blogWrapper">
-                                <div class="closeBlog">x</div>
-                                <div class="blogContent">
-
-                                    <div class="row">
-                                        <a href="#"><i class="uil uil-user"></i>Amalik</a>
-                                        <a href="#"><i class="las la-calendar"></i>December 12, 2022</a>
-                                        <a href="#"><i class="las la-tags"></i><span>Charity</span>,
-                                            <span>Donation</span>, <span>Help</span>
-                                        </a>
-
-                                    </div>
-
-                                    <h2 class="blogTitle">Making a Difference: Unleashing Compassion Through Charitable
-                                        Giving</h2>
-                                    <div class="image">
-                                        <img src="./images/download/ai-generated-7949924_1280.jpg"
-                                            style="object-position: 0 0" alt="blog-image">
-                                    </div>
-                                    <div class="blogDetails">
-                                        <p>
-                                            Charitable giving is a remarkable expression of compassion that has the
-                                            power to make a profound difference in the
-                                            world. When you embrace the spirit of giving, you unleash a force of love
-                                            and kindness that has the potential to
-                                            transform lives and uplift communities.
-
-                                            Through your charitable contributions, you become an agent of change. You
-                                            address pressing needs and create
-                                            opportunities for those less fortunate. Your support provides essential
-                                            resources, empowers individuals, and helps break
-                                            the cycle of poverty and suffering. In doing so, you become a beacon of
-                                            hope, igniting positive transformation.
-
-                                            Charitable giving is more than just a financial transaction—it is an act of
-                                            empathy and understanding. It is a way to
-                                            connect with the struggles and triumphs of others, and to extend a helping
-                                            hand to those in need. Your compassion knows
-                                            no boundaries, as you reach out to individuals and communities, embracing
-                                            the inherent dignity and worth of every human
-                                            being.
-                                        </p>
-                                        <p>The impact of your charitable giving extends far beyond the immediate
-                                            assistance it provides. It creates a ripple effect
-                                            that spreads far and wide. Your actions inspire others to join in,
-                                            amplifying the collective impact of compassion and
-                                            creating a movement of positive change.
-
-                                            Moreover, when you engage in charitable giving, you experience personal
-                                            growth and fulfillment. It expands your
-                                            perspective, deepens your empathy, and connects you to something greater
-                                            than yourself. The act of giving not only
-                                            benefits those you help but also enriches your own life, allowing you to
-                                            witness the tangible results of your
-                                            generosity.
-
-                                            As you unleash compassion through charitable giving, remember that every
-                                            contribution matters. No act of kindness is too
-                                            small, and every effort counts. Whether you donate your time, skills, or
-                                            resources, you play a vital role in making the
-                                            world a better place.
-                                        </p>
-
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="blogMainItem">
-                            <div class="blog_inner">
-
-                                <div class="image imageCard">
-                                    <a href="#" class="read"> <i class="uil uil-edit"></i> Read More</a>
-                                    <img src="./images/project-1.webp" alt="">
-
-                                </div>
-                                <div class="content">
-                                    <h2>The Joy of Giving: Enhancing Lives Through Your Support</h2>
-                                    <a href="#"><i class="uil uil-clock"></i>June 24, 2023</a>
-                                    <a href="#"><i class="uil uil-map-marker-alt"></i>Amammomah, Ucc</a>
-
-                                </div>
-                            </div>
-                            <div class="blogWrapper">
-                                <div class="closeBlog">x</div>
-                                <div class="blogContent">
-
-                                    <div class="row">
-                                        <a href="#"><i class="uil uil-user"></i>Kirchoffz</a>
-                                        <a href="#"><i class="las la-calendar"></i>June 24, 2023</a>
-                                        <a href="#"><i class="las la-tags"></i><span>Charity</span>,
-                                            <span>Donation</span>, <span>Help</span><span>Lines</span>
-                                        </a>
-
-                                    </div>
-                                    <h2 class="blogTitle">The Joy of Giving: Enhancing Lives Through Your Support</h2>
-                                    <div class="image">
-                                        <img src="./images/project-1.webp" alt="blog-image">
-                                    </div>
-                                    <div class="blogDetails">
-                                        <p>There is an indescribable joy that accompanies the act of giving. It is in
-                                            these selfless moments that we find our true
-                                            purpose and make a profound impact on the lives of others. Through your
-                                            unwavering support, you have the power to
-                                            enhance lives and create a ripple of positivity that extends far beyond what
-                                            you can imagine.
-
-                                            When you give, you become a catalyst for change. Your support provides vital
-                                            resources and opportunities that can
-                                            transform the trajectory of someone's life. It may mean access to education,
-                                            a safe shelter, healthcare, or simply a
-                                            warm meal. Your generosity becomes a lifeline, offering hope and a chance
-                                            for a brighter future.
-                                        </p>
-                                        <p>But the joy of giving is not limited to those who receive. It fills your own
-                                            heart with immense satisfaction and
-                                            fulfillment. It is a reminder of our shared humanity and the
-                                            interconnectedness of our lives. Through your support, you
-                                            gain a deeper appreciation for the blessings you have and a greater
-                                            understanding of the power of compassion.
-
-                                            Moreover, your support inspires others to join in and make a difference.
-                                            Your actions create a ripple effect,
-                                            encouraging a community of giving and kindness. By leading through example,
-                                            you empower others to embrace their capacity
-                                            for generosity and create a collective impact that transcends boundaries.
-
-                                        </p>
-
-
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="blogMainItem">
-                            <div class="blog_inner">
-
-                                <div class="image imageCard">
-                                    <a href="#" class="read"> <i class="uil uil-edit"></i> Read More</a>
-                                    <img src="./images/GO.jpg" alt="">
-
-                                </div>
-                                <div class="content">
-                                    <h2>Building Bridges, Touching Lives: The Impact of Your Charitable Giving.</h2>
-                                    <a href="#"><i class="uil uil-clock"></i>Jan 24, 2023</a>
-                                    <a href="#"><i class="uil uil-map-marker-alt"></i>Asante Mampong, Kofiase</a>
-
-                                </div>
-                            </div>
-                            <div class="blogWrapper">
-                                <div class="closeBlog">x</div>
-                                <div class="blogContent">
-
-                                    <div class="row">
-                                        <a href="#"><i class="uil uil-user"></i>Amalik</a>
-                                        <a href="#"><i class="las la-calendar"></i>9th jan 2022</a>
-                                        <a href="#"><i class="las la-tags"></i><span>Charity</span>,
-                                            <span>Donation</span>, <span>Help</span>
-                                        </a>
-
-                                    </div>
-                                    <h2 class="blogTitle">Building Bridges, Touching Lives: The Impact of Your
-                                        Charitable Giving
-                                    </h2>
-                                    <div class="image">
-                                        <img src="./images/GO.jpg" alt="blog-image">
-                                    </div>
-                                    <div class="blogDetails">
-                                        <p>In a world where compassion and empathy have the power to transcend
-                                            boundaries, your charitable giving serves as a
-                                            bridge, connecting lives and creating a lasting impact. Through your
-                                            selfless contributions, you become a catalyst for
-                                            change, reaching out to those in need and touching their lives in profound
-                                            ways.
-
-                                            Every donation you make, no matter how big or small, has the potential to
-                                            transform lives. It provides essential
-                                            resources, such as food, shelter, healthcare, and education, to vulnerable
-                                            individuals and communities. Your generosity
-                                            acts as a beacon of hope, illuminating their path towards a brighter future.
-                                        </p>
-                                        <p>he impact of your charitable giving extends far beyond the immediate
-                                            assistance it provides. By investing in the
-                                            well-being of others, you inspire a ripple effect of positivity and
-                                            empowerment. Your act of kindness encourages others
-                                            to follow suit, creating a collective movement towards a more compassionate
-                                            world.
-
-                                            Furthermore, your charitable giving builds bridges between different
-                                            communities and cultures. It fosters understanding,
-                                            breaks down barriers, and promotes unity among diverse groups. By embracing
-                                            the universal language of compassion, you
-                                            promote harmony and inclusivity, strengthening the fabric of our global
-                                            society.
-                                        </p>
-
-                                        <p>Witnessing the transformative power of your generosity is a deeply fulfilling
-                                            experience. It reaffirms your values and
-                                            purpose, reminding you of the inherent interconnectedness of humanity. It
-                                            reminds you that your actions, no matter how
-                                            small, can make a significant difference in someone's life.
-
-                                            So, let us continue to build bridges and touch lives through our charitable
-                                            giving. Together, we can create a world
-                                            where compassion knows no boundaries and where every individual has the
-                                            opportunity to thrive. Your contributions are a
-                                            testament to the profound impact we can make when we extend our hands in
-                                            love and generosity.
-
-                                        </p>
-                                        <p>Hi my name is Abdul Malik. I am a prfessional web Developer, and I'm very
-                                            passionate and dedicated to my work. with 3 year experience as a junior web
-                                            developer, I have acquired the skills and knowledge neccessary to make your
-                                            project a success. I enjoy every step of design process, from discussion and
-                                            collaboraton.
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="blogMainItem">
-                            <div class="blog_inner">
-
-                                <div class="image imageCard">
-                                    <a href="#" class="read"> <i class="uil uil-edit"></i> Read More</a>
-                                    <img src="./images/larm-rmah-AEaTUnvneik-unsplash.jpg" alt="">
-
-                                </div>
-                                <div class="content">
-                                    <h2>Hope Begins with You: How Your Contributions Provide a Lifeline to the Needy.
-                                    </h2>
-                                    <a href="#"><i class="uil uil-clock"></i>September 24, 2025</a>
-                                    <a href="#"><i class="uil uil-map-marker-alt"></i>Havana , Cuba: In Shaa Allah.</a>
-
-                                </div>
-                            </div>
-                            <div class="blogWrapper">
-                                <div class="closeBlog">x</div>
-                                <div class="blogContent">
-
-                                    <div class="row">
-                                        <a href="#"><i class="uil uil-user"></i>Smalik</a>
-                                        <a href="#"><i class="las la-calendar"></i>September 1, 2025</a>
-                                        <a href="#"><i class="las la-tags"></i><span>Charity</span>,
-                                            <span>Donation</span>, <span>Help</span>
-                                        </a>
-
-                                    </div>
-                                    <h2 class="blogTitle">Hope Begins with You: How Your Contributions Provide a
-                                        Lifeline to the Needy.</h2>
-                                    <div class="image">
-                                        <img src="./images/larm-rmah-AEaTUnvneik-unsplash.jpg" alt="blog-image">
-                                    </div>
-                                    <div class="blogDetails">
-                                        <p>In a world often plagued by hardships and adversity, you hold the power to
-                                            ignite hope and bring about positive change
-                                            through your generous contributions. Your support serves as a lifeline,
-                                            reaching out to those in desperate need and
-                                            offering them a glimmer of light in their darkest moments.
-
-                                            Your contributions provide essential resources and services that act as
-                                            pillars of support for the vulnerable. Access to
-                                            food, clean water, healthcare, and education becomes a reality through your
-                                            selfless giving. You become a beacon of
-                                            hope, restoring dignity and empowering individuals to rebuild their lives.
-                                        </p>
-                                        <p>Through your compassion, you provide more than just tangible assistance. You
-                                            instill a sense of optimism and resilience
-                                            in those who have faced unimaginable challenges. Your contributions remind
-                                            them that they are not alone, that there are
-                                            people who care and are willing to stand by their side.
-
-                                            The impact of your contributions extends far beyond the immediate relief it
-                                            provides. It creates a ripple effect,
-                                            inspiring others to join in and make a difference. Your generosity becomes
-                                            contagious, igniting a movement of compassion
-                                            and solidarity that reverberates through communities and transforms lives
-                                        </p>
-
-                                        <p>Hope begins with you, as you embody the belief that a better future is
-                                            possible for all. Your contributions become a
-                                            catalyst for positive change, breaking the cycle of despair and offering a
-                                            pathway to brighter tomorrows. You become a
-                                            source of inspiration for others, encouraging them to take action and be
-                                            part of the solution.
-
-                                            Never underestimate the power of your contributions. Each act of kindness,
-                                            no matter how small, has the potential to
-                                            uplift someone's spirit, restore their faith, and change the trajectory of
-                                            their lives. Your generosity provides a
-                                            lifeline to the needy, reminding them that they are seen, valued, and
-                                            deserving of a better tomorrow.
-
-                                            So, let us continue to embrace the transformative power of our
-                                            contributions. Together, we can build a world where hope
-                                            thrives, where no one is left behind, and where the collective impact of our
-                                            generosity creates a brighter and more
-                                            compassionate future for all.
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-        </section> -->
-        <section id="donate">
-            <div class="container">
-
-                <h2>Donate</h2>
-                <p>Your generous donation can make a real difference in the lives of those in need. Help us create a
-                    positive impact by contributing to our cause.</p>
-
-                <div class="donate-options">
-
-
-                    <div class="buttons container">
-                        <div class="button">
-                            <button onclick="showDonationPopup('mtnmomo')">Donate via MTN MoMo</button>
-                            <button onclick="showDonationPopup('telecel')">Donate via Telecel</button>
-                            <button onclick="showDonationPopup('airteltigo')">Donate via Airtel Tigo</button>
-                            <button onclick="showDonationPopup('bankaccount')">Donate via Bank Account</button>
-                            <!-- <button onclick="showPaymentOptions()">All Payment options</button> -->
-                        </div>
-
-
 
                     </div>
                 </div>
 
 
             </div>
-        </section>
+        </section> -->
+
     </main>
 
     <footer id="contact">
@@ -994,51 +481,7 @@
 
     </div>
 
-    <div class="formWrap">
-        <div class="wrapper-inner contact_section active" id="contact">
-            <section class="container">
-                <div class="contactForm">
-                    <div class="closeform">&times;</div>
-                    <div class="user signinBx">
-                        <div class="imgBx">
-                            <img src="./images/03.jpg" alt="" />
-                        </div>
-                        <div class="formBx">
-                            <form action="#">
-                                <h2>Sign In</h2>
-                                <input type="text" name="" required autocomplete="off" placeholder="Username" />
-                                <input type="password" required autocomplete="off" name="" placeholder="Password" />
-                                <input type="submit" value="Login" />
-                                <p class="signup">
-                                    Don't Have an account ?
-                                    <a href="#" onclick="toggleForm();">Sign Up</a>
-                                </p>
-                            </form>
-                        </div>
-                    </div>
-                    <div class="user signupBx">
-                        <div class="formBx">
-                            <form action="#">
-                                <h2>Create An Account</h2>
-                                <input type="text" name="" required autocomplete="off" placeholder="Username" />
-                                <input type="email" name="" required autocomplete="off" placeholder="Email" />
-                                <input type="password" name="" required autocomplete="off" placeholder="password" />
-                                <input type="password" name="" required autocomplete="off"
-                                    placeholder="confirm password" />
-                                <input type="submit" value="Sign Up" />
-                                <p class="signup">
-                                    Already Have an account<a href="#" onclick="toggleForm();">Sign In</a>
-                                </p>
-                            </form>
-                        </div>
-                        <div class="imgBx">
-                            <img src="./images/003.jpg" alt="" />
-                        </div>
-                    </div>
-                </div>
-            </section>
-        </div>
-    </div>
+ 
     <div class="preloader">
         <div class="loader"></div>
     </div>
@@ -1047,85 +490,11 @@
     <script src="./Assets/lightgallery.js-master/dist/js/lightgallery.min.js"></script>
     <script src="./assets/owlCarousel/Js/owl.carousel.min.js"></script>
     <script src="./js/aos.js"></script>
-
+    <script src="https://js.paystack.co/v2/inline.js"></script>
+    <script src="./Js/payment.js"></script>
     <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
 
-    <script>
-        function showDonationPopup(paymentMethod) {
-            var paymentMethods = {
-                mtnmomo: {
-                    phoneNumber: "123456789",
-                    methodText: "MTN MoMo"
-                },
-                telecel: {
-                    phoneNumber: "987654321",
-                    methodText: "Telecel"
-                },
-                airteltigo: {
-                    phoneNumber: "567890123",
-                    methodText: "Airtel Tigo"
-                },
-                bankaccount: {
-                    phoneNumber: "012345678",
-                    methodText: "Bank Account"
-                }
-            };
-
-            var bankAccountNumber = "1111111111"; // Replace with your bank account number
-
-            var selectedMethod = paymentMethods[paymentMethod];
-
-            var message = "To make a donation, please send your contribution to the following " + selectedMethod.methodText + " number or bank account:\n\n" +
-                "Phone Number: " + selectedMethod.phoneNumber + "\n\n" +
-                "Bank Account Number: " + bankAccountNumber;
-
-            swal({
-                title: "Donate via " + selectedMethod.methodText,
-                text: message,
-                buttons: {
-                    confirm: "Close",
-                },
-            });
-        }
-
-        function showPaymentOptions() {
-            var paymentMethods = {
-                mtnmomo: {
-                    phoneNumber: "123456789",
-                    methodText: "MTN MoMo"
-                },
-                telecel: {
-                    phoneNumber: "987654321",
-                    methodText: "Telecel"
-                },
-                airteltigo: {
-                    phoneNumber: "567890123",
-                    methodText: "Airtel Tigo"
-                },
-                bankaccount: {
-                    phoneNumber: "012345678",
-                    methodText: "Bank Account"
-                }
-            };
-
-            var bankAccountNumber = "1111111111"; // Replace with your bank account number
-
-            var message = "You can make a donation using the following payment methods:\n\n" +
-                "1. MTN MoMo - Phone Number: " + paymentMethods.mtnmomo.phoneNumber + "\n" +
-                "2. Telecel - Phone Number: " + paymentMethods.telecel.phoneNumber + "\n" +
-                "3. Airtel Tigo - Phone Number: " + paymentMethods.airteltigo.phoneNumber + "\n" +
-                "4. Bank Account - Account Number: " + bankAccountNumber;
-
-            swal({
-                title: "Payment Options",
-                text: message,
-                buttons: {
-                    confirm: "Close",
-                },
-            });
-        }
-    </script>
-
+   
     <script src="./js/main.js"></script>
     <script src="./js/Footer.js"></script>
 </body>

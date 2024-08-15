@@ -125,7 +125,7 @@ body.active::before {
   border-radius: 30px;
   overflow: hidden;
   position: relative;
-  z-index: 2;
+  z-index:666;
   transition: 0.3s ease;
 }
 .btn i {

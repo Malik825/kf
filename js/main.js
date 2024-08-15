@@ -117,7 +117,7 @@ $(() => {
 });
 
 setInterval(() => {
-  const countDate = new Date("August 19, 2024").getTime();
+  const countDate = new Date("December 24, 2024").getTime();
   const now = new Date().getTime();
   const gap = countDate - now;
 
