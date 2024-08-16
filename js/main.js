@@ -148,49 +148,7 @@ let stickyNavbar = () => {
 };
 this.addEventListener("scroll", stickyNavbar);
 stickyNavbar();
-//  Skills
-const first_skill = document.querySelector(".skill:first-child");
 
-const sk_counter = document.querySelectorAll(".counter span");
-const progress_bars = document.querySelectorAll(".skills svg circle");
-
-this.addEventListener("scroll", (e) => {
-  let skillsPlayed = false;
-
-  if (!skillsPlayed) skillsCounter();
-});
-
-function updateCounter(num, maxNumber) {
-  let currentNum = +num.innerText;
-  if (currentNum < maxNumber) {
-    num.innerText = currentNum + 1;
-    setTimeout(() => {
-      updateCounter(num, maxNumber);
-    }, 12);
-  }
-}
-
-function hasReached(el) {
-  let topPosition = el.getBoundingClientRect().top;
-  if (window.innerHeight >= topPosition + el.offsetHeight) return true;
-  return false;
-}
-
-function skillsCounter() {
-  if (!hasReached(first_skill)) return;
-  skillsPlayed = true;
-  sk_counter.forEach((counter, i) => {
-    let target = counter.dataset.target;
-    let strokeValue = 427 - 427 * (target / 100);
-    progress_bars[i].style.setProperty("--target", strokeValue);
-    setTimeout(() => {
-      updateCounter(counter, target);
-    }, 400);
-  });
-  progress_bars.forEach(
-    (p) => (p.style.animation = "progress 2s ease-in-out forwards")
-  );
-}
 
 lightGallery(document.querySelector(".gallery .lightbox"));
 
@@ -209,6 +167,26 @@ document.addEventListener("keydown", (e) => {
     return;
   }
 });
+// const themeToggler = document.querySelector('.themeToggler');
+// const body = document.body;
+
+// // Check if a theme is saved in localStorage
+// const savedTheme = localStorage.getItem('theme');
+// if (savedTheme) {
+//   body.classList.add(savedTheme);
+// }
+
+// themeToggler.addEventListener('click', () => {
+//   alert("hello World")
+//   body.classList.toggle('dark-theme');
+//   body.classList.toggle('light-theme');
+
+//   // Save the current theme to localStorage
+//   const currentTheme = body.classList.contains('dark-theme')
+//     ? 'dark-theme'
+//     : 'light-theme';
+//   localStorage.setItem('theme', currentTheme);
+// });
 
 let loading = () => {
   setTimeout(() => {
@@ -262,17 +240,3 @@ this.onload = () => {
   });
 })();
 
-(() => {
-  let buyProductBtn = document.querySelectorAll("#payHandler");
-  let fixedArea = document.querySelector(".fixed");
-  let closeBtn = document.querySelector(".close");
-  buyProductBtn.forEach((pay) => {
-    pay.addEventListener("click", (e) => {
-      e.preventDefault();
-      fixedArea.classList.add("active");
-    });
-  });
-  closeBtn.onclick = (e) => {
-    fixedArea.classList.remove("active");
-  };
-})();
