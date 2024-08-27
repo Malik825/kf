@@ -223,7 +223,7 @@
                         <li>Respect</li>
                         <li>Compassion</li>
                         <li>Transparency</li>
-                        <li>Team Word</li> Teamwork
+                        <li>Team Work</li> Teamwork
             
                     </ul>
                 </div>
@@ -245,9 +245,10 @@
                     </h2>
                     <ul>
                         <li>Rural communities, the street and beyond</li>
-                        <li>Rural communities, the street and beyond</li>
-                        <li>Rural communities, the street and beyond</li>
-                        <li>Rural communities, the street and beyond</li>
+                        <li>Education</li>
+                        <li>Health and Wealfare</li>
+                        <li>Good Living</li>
+                        <li>Sustainable development</li>
             
                     </ul>
                 </div>
@@ -265,10 +266,6 @@
         
                     <div class="buttons container">
                         <div class="button">
-                            <!-- <button onclick="showDonationPopup('mtnmomo')">Donate via MTN MoMo</button>
-                            <button onclick="showDonationPopup('telecel')">Donate via Telecel</button>
-                            <button onclick="showDonationPopup('airteltigo')">Donate via Airtel Tigo</button>
-                            <button onclick="showDonationPopup('bankaccount')">Donate via Bank Account</button> -->
                             <button onclick="showPaymentOptions()">Make a donation</button>
                         </div>
         
@@ -337,30 +334,21 @@
         function showPaymentOptions() {
             var paymentMethods = {
                 mtnmomo: {
-                    phoneNumber: "123456789",
+                    phoneNumber: "0530460093",
                     methodText: "MTN MoMo"
                 },
-                telecel: {
-                    phoneNumber: "987654321",
-                    methodText: "Telecel"
-                },
-                airteltigo: {
-                    phoneNumber: "567890123",
-                    methodText: "Airtel Tigo"
-                },
                 bankaccount: {
-                    phoneNumber: "012345678",
-                    methodText: "Bank Account"
+                    merchantId: "427705",
+                    methodText: "Merchant ID"
                 }
             };
 
-            var bankAccountNumber = "1111111111"; // Replace with your bank account number
+            var bankAccountNumber = "3021010085740"; // Replace with your bank account number
 
             var message = "You can make a donation using the following payment methods:\n\n" +
                 "1. MTN MoMo - Phone Number: " + paymentMethods.mtnmomo.phoneNumber + "\n" +
-                "2. Telecel - Phone Number: " + paymentMethods.telecel.phoneNumber + "\n" +
-                "3. Airtel Tigo - Phone Number: " + paymentMethods.airteltigo.phoneNumber + "\n" +
-                "4. Bank Account - Account Number: " + bankAccountNumber;
+                "2. Merchant ID: " + paymentMethods.bankaccount.merchantId + "\n" +
+                "3. Bank Account - Account Number: " + bankAccountNumber;
 
             swal({
                 title: "Payment Options",

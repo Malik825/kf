@@ -205,6 +205,11 @@ body.active::before {
   background-color: #fff;
   padding: 0.25rem 0;
 }
+@media (max-width: 500px) {
+  .header {
+    padding: 0 !important;
+  }
+}
 .header.fixed_me {
   position: fixed;
   top: 0;
@@ -233,7 +238,7 @@ body.active::before {
 }
 .header .logo img {
   width: 110px;
-  height: 85px;
+  height: 65px;
   -o-object-fit: cover;
      object-fit: cover;
 }
@@ -349,7 +354,8 @@ body.active::before {
     position: fixed;
     right: 0rem;
     cursor: pointer;
-    top: 0.75rem;
+    top: 1.75rem;
+    right: 1rem;
     font-size: 1.5rem;
     display: flex;
     justify-content: flex-end;
