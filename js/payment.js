@@ -33,10 +33,12 @@ document.getElementById('payBtn').addEventListener('click', payWithPaystack)
 const paymentModalWrapper = document.getElementById('payment-modal-wrapper');
 const subscribeToggler2 = document.getElementById('subscribeToggler2');
 
-subscribeToggler2.addEventListener('click', () => {
+subscribeToggler2.addEventListener('click', (e) => {
+  e.preventDefault()
   paymentModalWrapper.classList.add('active');
 });
-closeDonateBtn.addEventListener('click', () => {
+closeDonateBtn.addEventListener('click', (e) => {
+  e.preventDefault()
   paymentModalWrapper.classList.remove('active');
 });
 

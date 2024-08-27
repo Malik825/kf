@@ -216,6 +216,9 @@ body.active::before {
   left: 0;
   right: 0;
   z-index: 99;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   animation: from 0.5s ease-in forwards;
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.25);
 }
@@ -354,7 +357,7 @@ body.active::before {
     position: fixed;
     right: 0rem;
     cursor: pointer;
-    top: 1.75rem;
+    top: 1.05rem;
     right: 1rem;
     font-size: 1.5rem;
     display: flex;
@@ -3673,7 +3676,9 @@ img {
 }
 @media (max-width: 667px) {
   .button button {
-    flex: 0 0 50%;
+    flex: 0 0 100%;
+    border-radius: 6px;
+    padding: 20px 12px !important;
   }
 }
 
