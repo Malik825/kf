@@ -150,11 +150,17 @@ this.addEventListener("scroll", stickyNavbar);
 stickyNavbar();
 
 
-lightGallery(document.querySelector(".gallery .lightbox"));
+// ========= LightGallery Initialization ==========
+const initLightGallery = (selector) => {
+  const el = document.querySelector(selector);
+  if (el && typeof lightGallery !== "undefined") {
+    lightGallery(el);
+  }
+};
 
-lightGallery(document.querySelector(".lightbox2 .lightbox"));
-
-lightGallery(document.querySelector(".lightbox3.lightbox"));
+initLightGallery(".gallery .lightbox");
+initLightGallery(".lightbox2 .lightbox");
+initLightGallery(".lightbox3 .lightbox");
 
 function toggleForm() {
   var container = document.querySelector(".contactForm");
