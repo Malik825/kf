@@ -1,8 +1,5 @@
-@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;600;700&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Montserrat:wght@400;500;600;700;800;900&family=Oswald:wght@200;400;500;600;700&family=Quicksand:wght@300;400;500;600;700&family=Satisfy&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Great+Vibes&family=Poppins:wght@300;400;600;800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Poppins:wght@300;400;600&family=Abril+Fatface&display=swap");
 /* ============= Global Reset =========== */
-@import 'https://fonts.googleapis.com/css?family=Do+Hyeon';
 * {
   border: none;
   outline: none;
