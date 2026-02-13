@@ -116,8 +116,9 @@ $(() => {
   });
 });
 
-setInterval(() => {
-  const countDate = new Date("December 24, 2024").getTime();
+const updateCountdown = () => {
+  const targetDateStr = "December 24, 2026";
+  const countDate = new Date(targetDateStr).getTime();
   const now = new Date().getTime();
   const gap = countDate - now;
 
@@ -126,16 +127,28 @@ setInterval(() => {
   const hours = minutes * 60;
   const days = hours * 24;
 
-  const textDay = Math.floor(gap / days);
-  const textHours = Math.floor((gap % days) / hours);
-  const textMinutes = Math.floor((gap % hours) / minutes);
-  const textSeconds = Math.floor((gap % minutes) / seconds);
+  let textDay = 0, textHours = 0, textMinutes = 0, textSeconds = 0;
 
-  document.querySelector(".days").innerText = textDay;
-  document.querySelector(".hours").innerText = textHours;
-  document.querySelector(".minutes").innerText = textMinutes;
-  document.querySelector(".seconds").innerText = textSeconds;
-}, 1000);
+  if (gap > 0) {
+    textDay = Math.floor(gap / days);
+    textHours = Math.floor((gap % days) / hours);
+    textMinutes = Math.floor((gap % hours) / minutes);
+    textSeconds = Math.floor((gap % minutes) / seconds);
+  }
+
+  const setInner = (sel, val) => {
+    const el = document.querySelector(sel);
+    if (el) el.innerText = val;
+  }
+
+  setInner(".days", textDay);
+  setInner(".hours", textHours);
+  setInner(".minutes", textMinutes);
+  setInner(".seconds", textSeconds);
+};
+
+setInterval(updateCountdown, 1000);
+updateCountdown();
 
 this.addEventListener("scroll", () => {
   document.getElementById("header").classList.toggle("fixed_me", scrollY > 180);
@@ -195,13 +208,15 @@ document.addEventListener("keydown", (e) => {
 // });
 
 let loading = () => {
-  setTimeout(() => {
-    document.querySelector(".preloader").classList.add("opacity-o");
-  }, 300);
-  setTimeout(function () {
-    document.querySelector(".preloader").style.display = "none";
-  }, 350);
+  const preloader = document.querySelector(".preloader");
+  if (!preloader) return;
+
+  preloader.classList.add("opacity-o");
+  preloader.addEventListener("transitionend", () => {
+    preloader.style.display = "none";
+  }, { once: true });
 };
+
 this.onload = () => {
   loading();
 };
